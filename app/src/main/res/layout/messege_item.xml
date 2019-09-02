@@ -20,7 +20,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/msg_sender"
             android:text="aaa"
-            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textColor="#000099"
             android:textStyle="bold"/>
 
         <TextView
@@ -28,11 +29,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Hellow  "
-            android:textColor="#000099"/>
+            android:textSize="25dp"
+            android:textColor="#000000"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/msg_time"
+            android:textSize="15dp"
             android:text="8:32"
             android:textColor="#990000"/>
 

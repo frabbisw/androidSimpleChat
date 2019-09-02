@@ -40,6 +40,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Vholde
     public void onBindViewHolder(final Vholder holder, final int position) {
         final Message message = dataMemberses.get(position);
 
+        if(message.isSender){
+            holder.msgText.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_END);
+            holder.msgSender.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_END);
+            holder.msgTime.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_END);
+        }
+
         holder.msgText.setText(message.text);
         holder.msgSender.setText(message.sender);
         holder.msgTime.setText(message.time);

@@ -4,11 +4,13 @@ public class Message {
     String text;
     String sender;
     String time;
+    boolean isSender;
 
-    public Message(String text, String sender, String time) {
+    public Message(String text, String sender, String time, boolean isSender) {
         this.text = text;
         this.sender = sender;
         this.time = time;
+        this.isSender = isSender;
     }
 
     public String getText() {
